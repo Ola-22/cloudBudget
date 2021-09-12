@@ -5,9 +5,12 @@
 }
 
 .app-main{
-  height: 600px;
+  height: 500px;
+  position: relative;
+
+  /* background-color: #cccccc;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position: relative; */
 }

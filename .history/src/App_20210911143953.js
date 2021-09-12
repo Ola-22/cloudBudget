@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <div
         className="app-main"
-        style={{ backgroundImage: "url(/bg.png)", height: "600px" }}
+        style={{ backgroundImage: "url(/bg.png)", height: "582px" }}
       >
         <Navbar />
       </div>
