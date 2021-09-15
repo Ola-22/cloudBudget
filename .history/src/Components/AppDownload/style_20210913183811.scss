@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+
+.download-main{
+  background-color: $btnColor;
+  height: 500px;
+  color: $whiteColor;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  &>div:first-of-type{
+    width: 445px;
+  }
+  &>div:last-of-type{
+    width: 533px;
+    position: relative;
+    padding-top: 94px;
+    & > div {
+    display: flex;
+    position: relative;
+    & >img:first-of-type{
+      position: absolute;
+      left: 150px;
+      // position: relative;
+    }
+    }
+    & > img{
+      position: absolute;
+      left: 44px;
+      top: 70px;
+    }
+  }
+}

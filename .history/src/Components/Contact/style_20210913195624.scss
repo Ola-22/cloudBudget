@@ -1,0 +1,12 @@
+.contact-main{
+  display: flex;
+  margin-top: 117px;
+  &> div:first-of-type{
+    width: 445px;
+    height: 160px;
+    & > h4{
+      font-size: 36px;
+      font-weight: 600;
+    }
+  }
+}

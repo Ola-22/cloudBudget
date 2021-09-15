@@ -1,0 +1,17 @@
+@import "../../../styles/variables.scss";
+
+
+.features-card{
+  position: relative;
+  text-align: center;
+  // display: flex;
+  & > div{
+    background-color: $whiteColor;
+    position: absolute;
+    top: 157px;
+    width: 293px;
+    height: 198px;
+    display: flex;
+    flex-direction: column;
+  }
+}

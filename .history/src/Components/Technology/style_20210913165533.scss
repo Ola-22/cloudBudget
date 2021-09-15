@@ -1,0 +1,14 @@
+.tech-main{
+   height: 500px;
+
+   & > h1{
+     font-size: 36px;
+     text-align: center;
+   }
+
+  & > div:first-of-type{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}

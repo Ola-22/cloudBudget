@@ -1,0 +1,13 @@
+.features-main{
+  background-color: #fafafa;
+  padding-top: 60px;
+  & >h1{
+    text-align: center;
+  }
+  & > div:first-of-type{
+    display: flex;
+    justify-content: space-evenly;
+    height: 660px;
+    flex-wrap: wrap;
+  }
+}

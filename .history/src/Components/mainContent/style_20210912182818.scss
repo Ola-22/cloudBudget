@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+
+.main-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: $whiteColor;
+  margin-top: 156px;
+  & > h1{
+    font-size: 72px;
+    text-transform: uppercase;
+    margin-left: 51px;
+  }
+}

@@ -1,0 +1,23 @@
+.footer-main{
+  display: flex;
+  flex-wrap: wrap;
+  height: 435px;
+  background-color: #fafafa;
+  padding-top: 85px;
+  justify-content: space-around;
+
+  & h3{
+    font-size: 18px;
+    width: 65px;
+    height: 22px;
+  }
+
+  & ul {
+    margin-top: 33px;
+    font-size: 12px;
+    width: 254px;
+    height: 54px;
+    text-align: justify;
+  }
+
+}

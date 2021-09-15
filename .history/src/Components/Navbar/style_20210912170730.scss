@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+
+.nav-main{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 40px;
+  & >nav{
+    display: flex;
+    & >a {
+      margin-left: 20px;
+      text-transform: uppercase;
+      color: $whiteColor;
+      font-size: 14px;
+      text-decoration: none;
+    }
+  }
+}
+
+.nav-box{
+  display: flex;
+  // margin-left: 5%;
+  & > h3{
+    font-size: 18px;
+    margin-left: 9.9px;
+    color: white;
+  }
+}
+
+.flag-box{
+  display: flex;
+  align-items: center;
+
+  & > h4{
+    font-size: 14px;
+    color: $whiteColor;
+    margin-inline-start: 2px;
+  }
+}

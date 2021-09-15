@@ -1,0 +1,8 @@
+.videoMain{
+  display: flex;
+  justify-content: space-around;
+
+  &:first-child{
+    width: 445px;
+  }
+}

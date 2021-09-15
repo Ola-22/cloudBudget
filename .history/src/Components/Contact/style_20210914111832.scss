@@ -1,0 +1,32 @@
+.contact-main{
+  display: flex;
+  margin-top: 117px;
+  justify-content: space-evenly;
+  &> div:first-of-type{
+    width: 445px;
+    height: 160px;
+    & > h4{
+      font-size: 36px;
+      font-weight: 600;
+      height: 107px;
+    }
+    & >p{
+      height: 64px;
+      font-size: 14px;
+      text-align: justify;
+    }
+  }
+  &>div:last-of-type{
+    width: 540px;
+    height: 305px;
+
+    &  input{
+      border: 1px solid #333333;
+      border-radius: 6px;
+      height: 60px;
+      &:not(:last-of-type){
+        width: 255px;
+      }
+    }
+  }
+}

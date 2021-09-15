@@ -1,0 +1,68 @@
+.contact-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 117px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 500px;
+}
+
+.contact-main > div:first-of-type {
+  width: 445px;
+  height: 160px;
+}
+
+.contact-main > div:first-of-type > h4 {
+  font-size: 36px;
+  font-weight: 600;
+  height: 107px;
+}
+
+.contact-main > div:first-of-type > p {
+  height: 64px;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.contact-main > div:last-of-type {
+  width: 540px;
+  height: 305px;
+}
+
+.contact-main > div:last-of-type input, .contact-main > div:last-of-type select {
+  height: 60px;
+  border-radius: 6px;
+  font-size: 16px;
+  color: rgba(19, 39, 67, 0.5);
+  padding-left: 31px;
+  outline: none;
+  border: 1px solid #333333;
+}
+
+.contact-main > div:last-of-type input, .contact-main > div:last-of-type > select {
+  width: 540px;
+  margin-top: 24px;
+}
+
+.contact-main > div:last-of-type > div:first-of-type input {
+  width: 255px;
+}
+
+.contact-main > div:last-of-type > div:first-of-type input:last-of-type {
+  margin-left: 30px;
+}
+
+.contact-main > div:last-of-type > button {
+  background-color: #ED4C5C;
+  border-radius: 6px;
+  width: 161px;
+  height: 50px;
+  margin-top: 27px;
+  border: 1px solid #ED4C5C;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */
