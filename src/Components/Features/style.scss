@@ -1,7 +1,7 @@
 .features-main{
   background-color: #fafafa;
-  // padding-top: 60px;
   height: 600px;
+  // display: flex;
   & >h1{
     text-align: center;
     padding-top: 60px;
@@ -12,5 +12,14 @@
     justify-content: space-evenly;
     height: 660px;
     flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: 900px) {
+    margin-top: 150px;
+    height: 1400px;
+  }
+
+  @media (min-width: 700px) and (max-width: 1100px) {
+    height: 1100px;
   }
 }

@@ -1,11 +1,10 @@
 .footer-main{
   display: flex;
   flex-wrap: wrap;
-  height: 435px;
+  height: 400px;
   background-color: #fafafa;
   padding-top: 85px;
   justify-content: space-evenly;
-
   & h3{
     font-size: 18px;
     height: 22px;
@@ -19,6 +18,10 @@
     line-height: 19.4px;
     &:nth-of-type(1), :nth-of-type(2){
         width: 254px;
+
+    @media only screen and (max-width: 500px) {
+      width: auto;
+      }
     }
   }
 
@@ -46,4 +49,20 @@
     margin-top: 141px;
   }
 
+  @media only screen and (max-width: 1000px) {
+    height: auto;
+    margin-top: 8rem;
+    }
+
+    @media only screen and (max-width: 500px) {
+      justify-content: space-between;
+      }
+
+}
+
+.copyright{
+  font-size: 12px;
+  background-color: #fafafa;
+  padding-left: 4rem;
+  padding-bottom: 20px;
 }

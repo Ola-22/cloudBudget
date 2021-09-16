@@ -14,6 +14,12 @@
   position: relative;
 }
 
+@media only screen and (max-width: 600px) {
+  .videoMain > div:last-of-type {
+    margin-top: 24px;
+  }
+}
+
 .videoMain > div:last-of-type img:first-of-type {
   border: 1px solid #ED4C5C;
   background-color: #ED4C5C;
@@ -22,6 +28,18 @@
   position: absolute;
   margin-top: 123px;
   left: -32px;
+}
+
+@media only screen and (max-width: 600px) {
+  .videoMain > div:last-of-type img:first-of-type {
+    left: -12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .videoMain {
+    margin-top: 14px;
+  }
 }
 
 .video-content {
