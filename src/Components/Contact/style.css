@@ -7,6 +7,8 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 500px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contact-main > div:first-of-type {
@@ -46,12 +48,31 @@
   margin-top: 24px;
 }
 
+@media only screen and (max-width: 600px) {
+  .contact-main > div:last-of-type input, .contact-main > div:last-of-type > select {
+    width: 450px;
+    margin-left: 20px;
+  }
+}
+
 .contact-main > div:last-of-type > div:first-of-type input {
   width: 255px;
 }
 
 .contact-main > div:last-of-type > div:first-of-type input:last-of-type {
   margin-left: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-main > div:last-of-type > div:first-of-type input:last-of-type {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-main > div:last-of-type > div:first-of-type input {
+    width: 450px;
+  }
 }
 
 .contact-main > div:last-of-type > button {
@@ -64,5 +85,11 @@
   color: #ffffff;
   text-transform: uppercase;
   font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-main > div:last-of-type > button {
+    margin-left: 10rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

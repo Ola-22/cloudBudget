@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-evenly;
   position: relative;
+  flex-wrap: wrap;
   &>div:first-of-type{
     width: 445px;
     & > h1{
@@ -42,5 +43,9 @@
       left: 44px;
       top: 94px;
     }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    height: auto;
   }
 }

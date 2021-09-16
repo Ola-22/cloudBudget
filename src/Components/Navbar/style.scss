@@ -32,7 +32,6 @@
 
 .nav-box{
   display: flex;
-  // margin-left: 5%;
   & > h3{
     font-size: 18px;
     margin-left: 9.9px;
@@ -56,17 +55,22 @@
   display: none;
 }
 @media only screen and (max-width: 600px) {
-nav {
+.nav-menu {
   background-color:rgb(237, 237, 237);
   width: 250px;
   height: 100vh;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 100%;
-  /* transition: 350ms; */
+ 
+  transition: 350ms; 
+
+  & >a{
+    color: $blackColor;
+    padding-top: 80px;
+  }
 }
 .menu-icon {
   display: block;
@@ -76,7 +80,6 @@ nav {
   transform: translate(-100%, 60%);
   font-size: 1.8rem;
   cursor: pointer;
-  color: $whiteColor;
   z-index: 10;
 }
 }
@@ -85,4 +88,7 @@ nav {
 .nav-menu.active {
   left: 50%;
   transition: 850ms;
+  & >a{
+    color: $blackColor;
+  }
 }
