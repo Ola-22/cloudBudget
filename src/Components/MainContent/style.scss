@@ -1,4 +1,4 @@
-@import "../../styles/variables.scss";
+@import "../../styles/variables";
 
 .main-content{
   display: flex;
@@ -11,6 +11,10 @@
     text-transform: uppercase;
     margin-left: 18px;
     letter-spacing: 0.05em;
+
+    @media only screen and (max-width: 500px) {
+      font-size: 50px;
+    }
   }
   & > p{
     font-size: 24px;
@@ -19,9 +23,6 @@
     font-weight: 600;
     overflow-wrap: break-word;
     text-align: center;
-    // text-indent: 31.6px;
-    // white-space: pre-wrap;
-    margin: 0;
   }
   & > button{
     background-color: $whiteColor;

@@ -1,13 +1,11 @@
-@import "../../styles/variables.scss";
+@import "../../styles/variables";
+@import "../../styles/main";
 
 .download-main{
   background-color: $btnColor;
   height: 500px;
   color: $whiteColor;
-  display: flex;
-  justify-content: space-evenly;
-  position: relative;
-  flex-wrap: wrap;
+  @extend %flexBox;
   &>div:first-of-type{
     width: 445px;
     & > h1{

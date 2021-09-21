@@ -2,13 +2,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 117px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 500px;
+  position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.contact-main {
+  margin-top: 117px;
+  height: 500px;
 }
 
 .contact-main > div:first-of-type {
