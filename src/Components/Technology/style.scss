@@ -1,3 +1,5 @@
+@import "../../styles/main";
+
 .tech-main{
    height: 500px;
 
@@ -9,9 +11,7 @@
    }
 
   & > div:first-of-type{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+ @extend %flexBox;
   }
 
   @media only screen and (max-width: 600px) {

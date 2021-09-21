@@ -1,11 +1,10 @@
-@import "../../styles/variables.scss";
+@import "../../styles/variables";
+@import "../../styles/main";
 
 .contact-main{
-  display: flex;
+  @extend %flexBox;
   margin-top: 117px;
-  justify-content: space-evenly;
   height: 500px;
-  flex-wrap: wrap;
   &> div:first-of-type{
     width: 445px;
     height: 160px;

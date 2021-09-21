@@ -1,3 +1,15 @@
+.features-main > div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .features-main {
   background-color: #fafafa;
   height: 600px;
@@ -10,15 +22,7 @@
 }
 
 .features-main > div:first-of-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   height: 660px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 900px) {

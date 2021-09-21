@@ -1,3 +1,15 @@
+.tech-main > div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .tech-main {
   height: 500px;
 }
@@ -7,17 +19,6 @@
   text-align: center;
   padding-top: 63px;
   padding-bottom: 52px;
-}
-
-.tech-main > div:first-of-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 600px) {

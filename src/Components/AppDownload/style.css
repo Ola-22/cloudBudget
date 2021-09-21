@@ -1,7 +1,4 @@
 .download-main {
-  background-color: #ED4C5C;
-  height: 500px;
-  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,6 +8,12 @@
   position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.download-main {
+  background-color: #ED4C5C;
+  height: 500px;
+  color: #ffffff;
 }
 
 .download-main > div:first-of-type {
