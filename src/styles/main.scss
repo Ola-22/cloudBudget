@@ -1,4 +1,4 @@
-%flexBox{
+.flexBox{
   display: flex;
   justify-content: space-evenly;
   position: relative;
@@ -12,7 +12,7 @@
   cursor: pointer;
 }
 
-%flexCol{
+.flexCol{
   display: flex;
   flex-direction: column;
   align-items: center;
