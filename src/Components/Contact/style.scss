@@ -1,5 +1,4 @@
 @import "../../styles/variables";
-@import "../../styles/main";
 
 .contact-main{
   @extend %flexBox;
@@ -9,13 +8,13 @@
     width: 445px;
     height: 160px;
     & > h4{
-      font-size: 36px;
+      font-size: $sizeLarge * 2;
       font-weight: 600;
       height: 107px;
     }
     & >p{
       height: 64px;
-      font-size: 14px;
+      font-size: $sizeMiddle - 2;
       text-align: justify;
     }
   }
@@ -26,7 +25,7 @@
     & input, & select{
        height: 60px;
        border-radius: 6px;
-       font-size: 16px;
+       font-size: $sizeMiddle;
        color: rgba(19,39,67,0.5);
        padding-left: 31px;
        outline: none;
@@ -61,14 +60,12 @@
 
     & > button{
       background-color: $btnColor;
-      border-radius: 6px;
       width: 161px;
       height: 50px;
       margin-top: 27px;
       border: 1px solid $btnColor;
       color: $whiteColor;
-      text-transform: uppercase;
-      font-size: 14px;
+      @extend %btn;
 
       @media only screen and (max-width: 600px) {
       margin-left: 10rem;

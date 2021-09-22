@@ -39,13 +39,13 @@
     font-weight: 600;
   }
   & > p{
-    font-size: 14px;
+    font-size: $sizeSmall + 2;
     text-align: justify;
     margin: 24px 0;
   }
   & > a{
     color: $btnColor;
-    font-size: 14px;
+    font-size: $sizeSmall + 2;
     text-decoration: none;
   }
 }
