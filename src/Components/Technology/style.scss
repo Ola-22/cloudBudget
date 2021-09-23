@@ -1,4 +1,5 @@
 @import "../../styles/main";
+@import "../../styles/variables";
 
 .tech-main{
    height: 500px;
@@ -11,7 +12,7 @@
    }
 
   & > div:first-of-type{
- @extend %flexBox;
+ @extend .flexBox;
   }
 
   @media only screen and (max-width: 600px) {

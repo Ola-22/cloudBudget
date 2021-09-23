@@ -1,6 +1,14 @@
 import "./style.css";
+import { Carousel } from "3d-react-carousal";
 
 export default function AppDownload() {
+  let slides = [
+    <img src="/images/Video_bg1.png" alt="1" />,
+    <img src="/images/features1.png" alt="2" />,
+    <img src="/images/features3.png" alt="3" />,
+    <img src="/images/Video_bg1.png" alt="4" />,
+    <img src="/images/features2.png" alt="5" />,
+  ];
   return (
     <div className="download-main">
       <div>
@@ -15,11 +23,7 @@ export default function AppDownload() {
         <img src="/images/windows.png" alt="" />
       </div>
       <div>
-        <div>
-          <img src="/images/Video_bg3.png" alt="" />
-          <img src="/images/Video_bg2.png" alt="" />
-        </div>
-        <img src="/images/Video_bg1.png" alt="" />
+        <Carousel slides={slides} interval={1000} />
       </div>
     </div>
   );

@@ -1,7 +1,11 @@
+@import "../../../styles/main";
+@import "../../../styles/variables";
+
+
 .tech-card{
   width: 255px;
   height: 226px;
-  @extend %flexCol;
+  @extend .flexCol;
   & > img{
     margin-top: 44px;
     width: 80px;

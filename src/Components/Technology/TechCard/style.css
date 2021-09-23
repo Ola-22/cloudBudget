@@ -1,6 +1,16 @@
-.tech-card {
-  width: 255px;
-  height: 226px;
+.flexBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flexCol, .tech-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,6 +23,11 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.tech-card {
+  width: 255px;
+  height: 226px;
 }
 
 .tech-card > img {

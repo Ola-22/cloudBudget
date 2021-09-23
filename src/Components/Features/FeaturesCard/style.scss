@@ -1,7 +1,6 @@
 @import "../../../styles/variables";
 @import "../../../styles/mixins";
-
-
+@import "../../../styles/main";
 
 .features-card{
   position: relative;
@@ -15,7 +14,7 @@
     height: 198px;
     left: 29px;
     @include box-shadow(0px ,5px, 30px, rgba(0, 0, 0, 0.1));
-    @extend %flexCol;
+    @extend .flexCol;
     color: #101010;
     border-radius: 8px;
     & > h3{

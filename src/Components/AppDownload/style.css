@@ -1,4 +1,4 @@
-.download-main {
+.flexBox, .download-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,6 +6,21 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flexCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -30,7 +45,7 @@
 
 .download-main > div:first-of-type > p {
   margin-bottom: 44px;
-  font-size: 14px;
+  font-size: 16px;
   text-align: justify;
 }
 
@@ -44,27 +59,8 @@
   padding-top: 116px;
 }
 
-.download-main > div:last-of-type > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-.download-main > div:last-of-type > div > img:first-of-type {
-  position: absolute;
-  left: 150px;
-}
-
 .download-main > div:last-of-type > img {
-  position: absolute;
-  left: 44px;
-  top: 94px;
-}
-
-@media only screen and (max-width: 1000px) {
-  .download-main {
-    height: auto;
-  }
+  width: 445px;
+  height: 311px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,4 @@
+@import "../../styles/main";
 
 .features-main{
   background-color: #fafafa;
@@ -8,7 +9,7 @@
     padding-bottom: 63px;
   }
   & > div:first-of-type{
-   @extend %flexBox;
+   @extend .flexBox;
     height: 660px;
   }
 
