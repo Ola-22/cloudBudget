@@ -1,4 +1,4 @@
-.footer-main {
+.flexBox, .footer-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,6 +6,21 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flexCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -75,7 +90,8 @@
 .copyright {
   font-size: 12px;
   background-color: #fafafa;
-  padding-left: 4rem;
+  -webkit-padding-start: 4rem;
+          padding-inline-start: 4rem;
   padding-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,8 @@
+@import "../../styles/main";
+@import "../../styles/variables";
 
 .footer-main{
-  @extend %flexBox;
+  @extend .flexBox;
   height: 400px;
   background-color: #fafafa;
   padding-top: 85px;

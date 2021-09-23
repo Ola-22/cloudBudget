@@ -1,7 +1,9 @@
 @import "../../styles/variables";
+@import "../../styles/main";
+
 
 .main-content{
-  @extend %flexCol;
+  @extend .flexCol;
   color: $whiteColor;
   margin-top: 158px;
   & > h1{

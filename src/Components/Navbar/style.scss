@@ -1,4 +1,6 @@
 @import "../../styles/variables";
+@import "../../styles/main";
+
 
 .nav-main{
   display: flex;
@@ -66,8 +68,16 @@
   transition: 350ms; 
 
   & >a{
-    color: $blackColor;
+    // color: $blackColor;
     padding-top: 80px;
+  }
+
+  .nav-menu.active {
+    left: 50%;
+    transition: 850ms;
+    // & >a{
+    //   color: $blackColor;
+    // }
   }
 }
 .menu-icon {
@@ -80,13 +90,4 @@
   cursor: pointer;
   z-index: 10;
 }
-}
-
-
-.nav-menu.active {
-  left: 50%;
-  transition: 850ms;
-  & >a{
-    color: $blackColor;
-  }
 }

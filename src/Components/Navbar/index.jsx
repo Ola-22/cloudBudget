@@ -28,11 +28,11 @@ function Navbar() {
             className={menu ? "nav-menu active" : "nav-menu"}
             onClick={showMenu}
           >
-            <Link to="/">overview</Link>
-            <Link to="/">features</Link>
-            <Link to="/">technology</Link>
-            <Link to="/">contact</Link>
-            <Link to="/">sign up</Link>
+            <Link to="/overview">overview</Link>
+            <Link to="/features">features</Link>
+            <Link to="/tech">technology</Link>
+            <Link to="/contact">contact</Link>
+            <Link to="/signUp">sign up</Link>
           </nav>
         </Router>
         <div style={{ display: "flex", cursor: "pointer" }}>
