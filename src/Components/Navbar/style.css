@@ -90,6 +90,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 96px;
+  position: relative;
 }
 
 .flag-box > h4 {
@@ -142,5 +143,34 @@
     cursor: pointer;
     z-index: 10;
   }
+}
+
+.flag-ar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ccc;
+  width: 92px;
+  height: 40px;
+  top: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ffffff;
+}
+
+.flag-ar > img:first-of-type {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.flag-ar > img:last-of-type {
+  width: 14px;
+  height: 8px;
 }
 /*# sourceMappingURL=style.css.map */

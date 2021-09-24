@@ -43,6 +43,7 @@
   display: flex;
   align-items: center;
   width: 96px;
+  position: relative;
   & > h4{
     font-size: $sizeSmall + 2;
     color: $whiteColor;
@@ -90,4 +91,26 @@
   cursor: pointer;
   z-index: 10;
 }
+}
+
+.flag-ar{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  background-color: #ccc;
+  width: 92px;
+  height: 40px;
+  top: 40px;
+  justify-content: space-between;
+  color: $whiteColor;
+  & > img:first-of-type(){
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+
+  & > img:last-of-type(){
+    width: 14px;
+    height: 8px; 
+  }
 }
