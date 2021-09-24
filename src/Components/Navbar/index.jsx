@@ -2,10 +2,26 @@ import "./style.css";
 import { useState } from "react";
 import { Link, BrowserRouter as Router } from "react-router-dom";
 
-function Navbar() {
+function Navbar(props) {
   const [menu, setMenu] = useState(false);
 
   const showMenu = () => setMenu(!menu);
+
+  let content = {
+    English: {
+      title: "main",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    },
+    Arabic: {
+      title: "الرئيسية",
+      description: "الصفحة الرئيسية",
+    },
+  };
+
+  props.language === "Arabic"
+    ? (content = content.Arabic)
+    : (content = content.English);
 
   return (
     <>
@@ -36,10 +52,35 @@ function Navbar() {
           </nav>
         </Router>
         <div style={{ display: "flex", cursor: "pointer" }}>
-          <div className="flag-box">
-            <img src="/images/flag.png" alt="" />
+          <div className="flag-box" onClick={() => setLang(!lang)}>
+            {/* <img src="/images/flag.png" alt="" />
             <h4>EN</h4>
             <img src="/images/vector2.png" alt="" />
+
+            {lang && (
+              <div className="flag-ar">
+                <img className="img-ar" src="/images/ar-flag.png" alt="" />
+                <h4>AR</h4>
+                <img src="/images/vector2.png" alt="" />
+              </div>
+            )} */}
+
+            <select
+              className="custom-select"
+              value={props.language}
+              onChange={(e) => props.handleSetLanguage(e.target.value)}
+            >
+              <option
+                value="English"
+                style={{ backgroundImage: "url(/images/flag.png)" }}
+              >
+                EN
+                {/* <img src="/images/flag.png" alt="" />
+                <h4>EN</h4>
+                <img src="/images/vector2.png" alt="" /> */}
+              </option>
+              <option value="Arabic">AR</option>
+            </select>
           </div>
           <button>Login</button>
         </div>

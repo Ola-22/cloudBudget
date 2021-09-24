@@ -9,8 +9,14 @@ import {
   Contact,
   Footer,
 } from "./components/component-path";
+import { useState } from "react";
 
 function App() {
+  let languageStoredInLocalStorage = localStorage.getItem("language");
+  let [language, setLanguage] = useState(
+    languageStoredInLocalStorage ? languageStoredInLocalStorage : "English"
+  );
+
   return (
     <div className="App">
       <div
@@ -21,10 +27,16 @@ function App() {
           height: "782px",
         }}
       >
-        <Navbar />
+        <Navbar
+          language={language}
+          handleSetLanguage={(language) => {
+            setLanguage(language);
+            storeLanguageInLocalStorage(language);
+          }}
+        />
         <MainContent />
       </div>
-      <VideoSection />
+      <VideoSection language={language} />
       <Features />
       <Technology />
       <AppDownload />
@@ -32,6 +44,10 @@ function App() {
       <Footer />
     </div>
   );
+}
+
+function storeLanguageInLocalStorage(language) {
+  localStorage.setItem("language", language);
 }
 
 export default App;
